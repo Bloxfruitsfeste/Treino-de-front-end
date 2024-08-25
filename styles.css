@@ -1,0 +1,184 @@
+/* Estilos globais */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0a0a0a;
+    color: #d1d1d1;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(90deg, #111, #333);
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 5px solid #ff0033;
+    box-shadow: 0 0 10px #ff0033;
+}
+
+h1 {
+    color: #ff0033;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2.5em;
+}
+
+/* Seção de introdução */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1c1c1c;
+    border-bottom: 2px solid #ff0033;
+}
+
+.intro h2 {
+    color: #ff0033;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #d1d1d1;
+}
+
+/* Seção de treino */
+.train {
+    background: #222;
+    padding: 30px;
+    margin: 20px;
+    border: 2px solid #ff0033;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff0033;
+}
+
+.train h2 {
+    color: #ff0033;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #ff0033;
+    padding-bottom: 5px;
+}
+
+.train p {
+    color: #d1d1d1;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #333;
+    background-color: #1c1c1c;
+    color: #d1d1d1;
+    font-family: 'Courier New', monospace;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px #ff0033;
+    resize: vertical;
+}
+
+button {
+    background-color: #ff0033;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ff0033;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #d4002b;
+    box-shadow: 0 0 15px #ff0033;
+}
+
+/* Área de Saída */
+.output {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.output h2 {
+    color: #ff0033;
+    font-size: 1.8em;
+    border-bottom: 2px solid #ff0033;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#output-frame {
+    width: 100%;
+    height: 300px;
+    border: 2px solid #ff0033;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff0033;
+}
+
+/* Rodapé */
+footer {
+    background: linear-gradient(90deg, #333, #111);
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid #ff0033;
+    box-shadow: 0 0 10px #ff0033;
+}
+
+footer p {
+    margin: 0;
+    color: #d1d1d1;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        flex-basis: 80%;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .intro h2 {
+        font-size: 1.5em;
+    }
+
+    .intro p {
+        font-size: 0.9em;
+    }
+
+    .feature {
+        flex-basis: 100%;
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
+
+.output {
+    margin: 20px 0;
+}
+
+#output-frame {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ff0033;
+    border-radius: 5px;
+}
