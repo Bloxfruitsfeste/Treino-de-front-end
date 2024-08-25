@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treine HTML, CSS e JavaScript - Design Robótico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Treine suas habilidades em HTML, CSS e JavaScript</h1>
+    </header>
+    
+    <div>
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">  
+    </div>
+
+    <main>
+        <!-- Introdução ao site de treino -->
+        <section class="intro">
+            <h2>Bem-vindo ao Site de Treino de front-end</h2>
+            <p>Pratique suas habilidades de front-end com exercícios e exemplos ao vivo.</p>
+        </section>
+
+        <!-- Seção de Treino: HTML -->
+        <section class="train html">
+            <h2>Pratique HTML</h2>
+            <p>Tente criar sua própria estrutura HTML abaixo:</p>
+            <textarea id="html-code" rows="10" placeholder="Digite seu código HTML aqui..."></textarea>
+            <button onclick="pasteCode('html-code')">Colar Código</button>
+        </section>
+
+        <!-- Seção de Treino: CSS -->
+        <section class="train css">
+            <h2>Pratique CSS</h2>
+            <p>Adicione estilos ao seu HTML:</p>
+            <textarea id="css-code" rows="10" placeholder="Digite seu código CSS aqui..."></textarea>
+            <button onclick="pasteCode('css-code')">Colar Código</button>
+        </section>
+
+        <!-- Seção de Treino: JavaScript -->
+        <section class="train javascript">
+            <h2>Pratique JavaScript</h2>
+            <p>Adicione interatividade com JavaScript:</p>
+            <textarea id="js-code" rows="10" placeholder="Digite seu código JavaScript aqui..."></textarea>
+            <button onclick="pasteCode('js-code')">Colar Código</button>
+        </section>
+
+        <button onclick="runCode()">Mostrar Resultado</button>
+
+        <!-- Área de Saída Final -->
+        <section class="output">
+            <h2>Resultado:</h2>
+            <iframe id="output-frame"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 InfiniTech - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
